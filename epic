@@ -1,5 +1,5 @@
 getgenv().SilentKeyy = 'q'
-getgenv().PredictionAmmount = 1000
+getgenv().PredictionAmmount = 100
 
 --// Main Libarys \\--
 local libary = loadstring(game:HttpGet("https://raw.githubusercontent.com/imagoodpersond/puppyware/main/lib"))()
