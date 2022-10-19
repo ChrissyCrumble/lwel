@@ -146,7 +146,7 @@ local PuppyModule = {
 }
 
 local Window = libary:new({name = "Omen.lua", accent = Color3.fromRGB(244, 95, 115), textsize = 13})
-local AimingTab = Window:page({name = "Legit"})
+local AimingTab = Window:page({name = "Aim"})
 local RageTab = Window:page({name = "Rage"})
 local VisualTab = Window:page({name = "Visauls"})
 local MiscTab = Window:page({name = "Misc"})
@@ -289,7 +289,7 @@ SilentAimSettings:toggle({name = "Ping Prediction (2)", def = false, callback = 
     PuppySettings.SilentAimSettings.PingPred2 = Boolean
 end})
 
-SilentAimSettings:slider({name = "Hit Chnace Amm", def = 100, max = 100, min = 0, rounding = true, callback = function(Value)
+SilentAimSettings:slider({name = "Hit Chance", def = 100, max = 100, min = 0, rounding = true, callback = function(Value)
     PuppySettings.SilentAimSettings.HitChanceAmount.HitPercent = tonumber(Value)
     PuppySettings.SilentAimSettings.HitChanceAmount.NotHitPercent = tonumber(100 - PuppySettings.SilentAimSettings.HitChanceAmount.HitPercent)
 end})
@@ -362,7 +362,7 @@ AASettings:keybind({name = "Auto Peak Keybind", def = Enum.KeyCode.N, callback =
 	PuppySettings.AutoPeak.APKey = Key
 end})
 
-AAMainSection:toggle({name = "+60 FPS", def = false, callback = function(Boolean)
+AAMainSection:toggle({name = "More FPS", def = false, callback = function(Boolean)
     PuppySettings.AntiAim.FPSUnlocked = Boolean
 end})
 
